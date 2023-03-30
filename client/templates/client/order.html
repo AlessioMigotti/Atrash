@@ -7,7 +7,7 @@
             <form method="POST">
                 {% csrf_token %}
          <div class="pt-5">
-                    <h2>Give Trash</h2>
+                    <h2>Get rid of Trash</h2>
                     {% for pick in picks %}
                     <div class="row">
                         <div class="col-md-2 col-sm-12">
@@ -50,7 +50,7 @@
                     <hr />
                     {% endfor %}
                 </div>
-                <h2>Multiple pick ups</h2>
+                <h2>Get rid of more</h2>
                 {% for multiplepick in multiplepicks %}
                 <div class="row">
                     <div class="col-md-2 col-sm-12">
@@ -72,7 +72,7 @@
                 {% endfor %}
             </div>
             
-            <h2>Multiple pick ups</h2>
+            <h2>Recive more</h2>
                 {% for multiplesell in multiplesells %}
                 <div class="row">
                     <div class="col-md-2 col-sm-12">

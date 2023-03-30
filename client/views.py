@@ -21,12 +21,9 @@ class Order(View):
         # get all items from each category
         picks = MenuItem.objects.filter(category__name__contains='Pick_ups')
         sells = MenuItem.objects.filter(category__name__contains='Deliveries')
-        multiplepicks = MenuItem.objects.filter(category__name__contains='Pick_ups,Multiples')
-        multiplesells = MenuItem.objects.filter(category__name__contains='Deliveries,Multiples')
+        multiplepicks = MenuItem.objects.filter(category__name__contains='Pick_ups, Multiples')
+        multiplesells = MenuItem.objects.filter(category__name__contains='Deliveries, Multiples')
         
-        
-        
-
         # pass into context
         context = {
             'sells': sells,
