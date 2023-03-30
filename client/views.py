@@ -19,15 +19,20 @@ class About(View):
 class Order(View):
     def get(self, request, *arg, **kwargs):
         # get all items from each category
-        sells = MenuItem.objects.filter(category__name__contains='Deliveries')
         picks = MenuItem.objects.filter(category__name__contains='Pick_ups')
+        sells = MenuItem.objects.filter(category__name__contains='Deliveries')
+        multiplepicks = MenuItem.objects.filter(category__name__contains='Pick_ups,Multiples')
+        multiplesells = MenuItem.objects.filter(category__name__contains='Deliveries,Multiples')
+        
+        
         
 
         # pass into context
         context = {
             'sells': sells,
             'picks': picks,
-            
+            'multiplepicks': multiplepicks,
+            'multiplesells': multiplesells,
         }
 
         # render the template

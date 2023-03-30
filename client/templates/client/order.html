@@ -50,7 +50,49 @@
                     <hr />
                     {% endfor %}
                 </div>
-
+                <h2>Multiple pick ups</h2>
+                {% for multiplepick in multiplepicks %}
+                <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                        <img class="rounded" src="{{ multiplepick.image.url}}" width="150" height="150">
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="d-flex flex-row">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="items[]" class="form-check-input"
+                                    value="{{ multiplepick.pk }}">
+                                <label class="form-check-label">{{ multiplepick.name }}</label>
+                            </div>
+                            <p class="font-weight-bold pl-5">&nbsp; £{{ multiplepick.price }}</p>
+                        </div>
+                        <p>{{ multiplepick.description}}</p>
+                    </div>
+                </div>
+                <hr />
+                {% endfor %}
+            </div>
+            
+            <h2>Multiple pick ups</h2>
+                {% for multiplesell in multiplesells %}
+                <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                        <img class="rounded" src="{{ multiplesell.image.url}}" width="150" height="150">
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="d-flex flex-row">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="items[]" class="form-check-input"
+                                    value="{{ multiplesell.pk }}">
+                                <label class="form-check-label">{{ multiplesell.name }}</label>
+                            </div>
+                            <p class="font-weight-bold pl-5">&nbsp; £{{ multiplesell.price }}</p>
+                        </div>
+                        <p>{{ multiplesell.description}}</p>
+                    </div>
+                </div>
+                <hr />
+                {% endfor %}
+            </div>
        
 
                 
