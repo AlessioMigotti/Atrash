@@ -5,3 +5,19 @@
     width: 100vw;
     height: 100vh;
 }
+.blink_pick {
+    color: brown;
+}
+.blink_del {
+    color:darkolivegreen
+}
+.blink_me {
+    
+    animation: blinker 3s step-start infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
