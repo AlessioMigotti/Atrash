@@ -1,19 +1,31 @@
 {% extends 'client/base.html' %}
 {% block  content %}
+<div class="container">
     <div class="container-fluid" id="front-page">
-        
+
         <div class="row justify-content-center">
             <h3 class='bg-dark'> {% now "h:m" %} on the {% now "jS \o\f F" %}</h3>
-            <div class="col-md-2 col-sm-12 p-4 my-5 text-center shadow rounded text-white bg-primary">
-                <h2>Coders Trash <hr> Online Order</h2>
+            <div class="col-md-2 col-sm-12 p-4 my-5 text-center shadow rounded text-white bg-success">
+                <h2>Coders Trash
+                    <hr> Online Order</h2>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="card col-md-2 col-sm-12 p-4 text-center bg-secondary">
+        <div class="row justify-content-center ">
+            <div class="card col-md-2 col-sm-12 p-4 text-center bg-warning">
                 <h2>Place an Order!</h2>
-                    <a href="{% url 'order' %}" class="btn btn-primary">Order Now!</a>
-                </div>
+                <a href="{% url 'order' %}" class="btn btn-danger">Order Now!</a>
             </div>
         </div>
     </div>
+    <div class="row justify-content-center mb-5">
+        <h5>Our Idea</h5>
+        <p>At our website, we take sustainability seriously, which is why we work with a network of contacts who
+            specialize in manual trash separation. These contacts are affiliated with various institutions,
+            including
+            recycling centers, waste management companies, and community-based organizations, and they use their
+            expertise to ensure that every piece of waste is properly sorted and recycled.</p>
+    </div>
+
+</div>
+
 {% endblock content %}
