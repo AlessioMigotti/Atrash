@@ -82,13 +82,13 @@ Please find my Kanban Board made with Trello  [here](https://trello.com/b/x9zPyG
 
 
 ## User Personas generated on [userpersona.dev](https://userpersona.dev/):
-* [UP0]()
-* [UP1]
-* [UP2]
-* [UP3]
-* [UP4]
-* [UP5]
-* [UP6]
+* ![UP0](assets/img/user-persona.png)
+* ![UP1](assets/img/user-persona%20(1).png)
+* ![UP2](assets/img/user-persona%20(2).png)
+* ![UP2](assets/img/user-persona%20(3).png)
+* ![UP3](assets/img/user-persona%20(4).png)
+* ![UP4](assets/img/user-persona%20(5).png)
+* ![UP5](assets/img/user-persona%20(6).png)
 
 ## Tasks
 
@@ -125,6 +125,28 @@ The tasks that I have followed during the development phase were carried out in 
 -----
 
 [Back to top](#content)
+
+## Design
+
+### Colours
+
+The colour scheme has considered based on easy accessibility for all and have been consistently maintained throughout the website. The colours were chose using [Coolors](https://coolors.co/). 
+
+![Color Palette](assets/img/color_pallete.png)
+
+### Imagery
+
+All the imagery is related to the trash and website design. Images are static and took from google images. The imagery was uploaded by the author to the database.
+
+### Wireframes
+
+The wireframes for this projected were generated using [Figma](https://www.figma.com/?fuid=). 
+- ![Wieframe for index](assets/img/Section%2038.png)
+- ![Wieframe for Menu](assets/img/Section%2022.png)
+- ![Wieframe for Shop](assets/img/Section%209.png)
+
+----
+
 
 
 
