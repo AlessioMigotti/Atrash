@@ -13,7 +13,7 @@ You can view the live site here: >>>>>>>>>>>>>>
   - [User Experience - UX](#user-experience---ux)
     - [Site Aims](#site-aims)
     - [Agile Methodology](#agile-methodology)
-      - [Epics and User Stories](#epics-and-user-stories)
+      - [User Stories](#user-stories)
       - [Tasks](#tasks)
   - [Design](#design)
     - [Colours](#colours)
@@ -146,6 +146,63 @@ The wireframes for this projected were generated using [Figma](https://www.figma
 - ![Wieframe for Shop](assets/img/Section%209.png)
 
 ----
+
+## Database Diagram
+
+ERDPlus was used to create a database schema to visualise the types of custom models the project requires. This schema was used as a guide to what needed to be added to each model. Below is the Database structure that this project is based on.
+
+![ER Diagram](assets/img/ERD%20regular%20background.png)
+
+[Back to top ⇧](#content)
+
+# Features
+
+## Home Page
+
+At the very first glimpse, user can see a Navigation bar. Homepage provides the user with some quick information about the site and make use of all its features. User do not need to be registered to order. The responsive navigation bar is featured on all pages. 
+
+![Homepage](assets/img/Screenshot%20(106).png)
+
+----
+
+
+## Navbar
+
+- The navigation bar is present at the top of every page and navigates all links to the respective pages.
+- The options to Register or Log in will be only for the staff once a user has logged in.
+- The navbar is fully responsive.
+
+![Navbar](assets/img/Screenshot%20(108).png)
+
+## User Page
+
+* This page will be only visible to logged-in user. When the user logs-in in the in the login page, the user navigates to the User page. On this user page, the user can view the orders, the custumer deatails, if they paid list and mark as delivered any of the orders.
+
+![logged-in-user-page](assets/features/logged-in-user-page.jpg) 
+
+* When user clicks on the order, following form will be displayed.
+
+![Add-post](assets/features/add-post-form.png)
+
+
+
+## Footer
+
+- On the website footer, users can see basic information such as my social media, copyright, and a quote about Incredible India.
+
+![Navbar](assets/features/footer.jpg)
+
+----
+
+## About Page
+
+- The About Page gives, users information about the Incredible India with a brief discription of india and the travel options to reach there.
+
+![About Us](assets/features/about-us-page1.jpg)
+![About Us](assets/features/about-us2.jpg)
+
+----
+
 
 
 
