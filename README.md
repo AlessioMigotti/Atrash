@@ -28,33 +28,20 @@ You can view the live site here: >>>>>>>>>>>>>>
       - [Destination Section](#destination-section)
       - [Footer](#footer)
     - [User Page](#user-page)
+    - [Staff Page](#staff-page)
     - [About Page](#about-page)
-    - [Blog Page](#blog-page)
-      - [Blog Details](#blog-details)
-      - [Blog Comments](#blog-comments)
-    - [Register](#register)
     - [Login](#login)
-    - [Logout](#logout)
-    - [Destinations](#destinations)
-    - [Search Button](#search-button)
-    - [Alert Messages](#alert-messages)      
+    - [Logout](#logout)  
   - [Admin Panel/Superuser](#admin-panelsuperuser)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Django Packages](#django-packages)
     - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
-  - [Testing](#testing)
-      - [Validation](#validation)
-      - [Manual Testing](#manual-testing)
+  - [Walktrough](#walktrough)
+    - [Steps](#steps)
   - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
       - [Unfix Bugs](#unfix-bugs)
-  - [Deployment](#deployment)
-      - [Creating the Django project](#creating-the-django-project)
-      - [Creating Heroku app](#creating-heroku-app)
-      - [Set up Environment Variables](#set-up-environment-variables)
-      - [Heroku deployment](#heroku-deployment)
-      - [Final Deployment](#final-deployment)
   - [Credits](#credits)
     - [Content](#content)
     - [Information Sources / Resources](#information-sources--resources)
@@ -176,32 +163,160 @@ At the very first glimpse, user can see a Navigation bar. Homepage provides the 
 
 ## User Page
 
-* This page will be only visible to logged-in user. When the user logs-in in the in the login page, the user navigates to the User page. On this user page, the user can view the orders, the custumer deatails, if they paid list and mark as delivered any of the orders.
+* This page will be only visible to the user. The user navigates to the order page. On this user page, the user can view the list of services, we ask the custumer deatails.
 
-![logged-in-user-page](assets/features/logged-in-user-page.jpg) 
+![order-page](assets/img/Screenshot%20(118).png) 
 
-* When user clicks on the order, following form will be displayed.
+* When user clicks on the order, the following form will be displayed.
 
-![Add-post](assets/features/add-post-form.png)
+![Pay-page](assets/img/Screenshot%20(117).png)
+
+Last the payment confirmation will be displayed.
+
+![Payment-confirmation-page](assets/img/Screenshot%20(118).png)
+
+
+## Staff Page
+
+* This page will be only visible to the staff. The staff navigates to the login page. On this user page, the staff can login to see the orders, and the custumer deatails.
+
+![Login-page](assets/img/Screenshot%20(111).png) 
+
+* When staff clicks on the login, the list of orders will be displayed.
+
+![Staff-page](assets/img/Screenshot%20(112).png)
+
+* Staff clicks on the edit, and the list of orders can be set as delivered.
+
+![Staff-page](assets/img/Screenshot%20(112).png)
+
 
 
 
 ## Footer
 
-- On the website footer, users can see basic information such as my social media, copyright, and a quote about Incredible India.
+- On the website footer, users can see basic information such as copyright, and login for staff.
 
-![Navbar](assets/features/footer.jpg)
+![Navbar](assets/img/Screenshot%20(120).png)
 
 ----
 
 ## About Page
 
-- The About Page gives, users information about the Incredible India with a brief discription of india and the travel options to reach there.
+- The About Page gives, users information about Coders Trash with a brief discription of the benefits.
 
-![About Us](assets/features/about-us-page1.jpg)
-![About Us](assets/features/about-us2.jpg)
+![About Us](assets/img/Screenshot%20(122).png
 
 ----
+
+## Admin Panel/Superuser
+
+- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown ![here](assets/img/Screenshot%20(126).png).
+- A superuser "admin" was created for this project to manage the admin panel.
+- On the Admin Panel, as an admin I have full access to CRUD functionality so I can view, create, edit and delete the following ones:
+  - Categorys
+  - MenuItems
+  - Order Models
+- As admin I can also approve orders, approve deliveries and change the status and give other permissions to the staff.
+
+### Admin Model Management
+
+- On selecting Blog "Post", a list of blog posts is displayed with its title, slug, status, created_on and author name. Admin can select the post and edit or delete its data.
+- When a blog post is submitted by a user, its status is set to Draft by default.
+- When the status is set to Publish on Admin Approval, the post starts appearing in the website.
+
+The admin site for post model appears as shown ![here](assets/img/Screenshot%20(127).png).
+
+### Admin 'Menu Item' Model Management
+
+- Upon selecting the "Menu Item" model, a list of items is displayed. Admin can select the item and edit or delete its data.
+- When a order is submitted by a user, it requires approval from an admin in order to publish it's contents.
+
+The admin site for 'Menu item' model appears as shown ![here](assets/img/Screenshot%20(128).png).
+The admin site for 'Order' model appears as shown ![here](assets/img/Screenshot%20(130).png).
+
+----
+
+## Technologies Used
+
+### Languages Used
+
+* [HTML 5](https://en.wikipedia.org/wiki/HTML/)- Used to structure all the templates on the site
+* [CSS 3](https://en.wikipedia.org/wiki/CSS)- to provide extra styling to the site
+* [JavaScript](https://www.javascript.com/)- Minimum javascript was used to fade out alerts after a few seconds.
+* [Python](https://www.python.org/)- To provide the functionality to the site. Packages used in the project can be found in requirements.txt
+
+### Django Packages
+
+* [Crispy_bootstrap](https://studygyaan.com/django/how-to-use-bootstrap-4-forms-with-django-crispy-forms)- As the server for Heroku.
+* [Pillow](https://pypi.org/project/Pillow/)- Was used to host the static files and media for the site.
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)- For authentication, registration, account management.
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)- To style the forms.
+
+### Frameworks - Libraries - Programs Used
+
+* [Django](https://www.djangoproject.com/) was used as the framework for the back-end logic of the project. Django enables rapid and secure development.
+* [Bootstrap](https://getbootstrap.com/)- Used to style the website, add responsiveness and interactivity.
+* [Git](https://git-scm.com/)- Used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+* [GitHub](https://github.com/)- Used to store the project's code after being pushed from Git.
+* [Figma](https://www.figma.com/login)- Used to make the project's wireframe.
+* [Userpersona](https://userpersona.dev/)- Used to make the project's outline.
+* [Youtube](https://youtube.com/)- Used to make the project's base.
+
+-----
+
+[Back to top ⇧](#content)
+
+# Walktrough
+
+## Steps
+All the pages got a navbar and a footer.
+* The index has an order burron that will bring you to the order page.
+* The order page gives you the possibility to choose the service you prefere, you will have to provide thr deatails, that will be the address where the service will be executed. Press the button and it will take the user to the pay page.
+* When you get to the pay page you'll see what you orxdered. I gave the option to to pay with paypal. When the payment is confirmed you'll see a payment confirmation page.
+
+* From the nav bar you can access the about page that gives a overview of what we do.
+* There is the option to see what the manu items are un the manu page, but you can't buy the product from that page.
+
+* If you whant to access as a staff member you have to press the login link on the footer. This will require a password and when you login you will be able to see all the orders and the status.
+
+* To login as the admin you need to access the django admin page, login and you will be able to modify the items on the website, the staff that can access.
+
+
+| **Unfix Bug** |
+| ----------- | 
+| When a logged in user adds a new post, the post slug should automatically be created from the post title. But the slug field is empty in the database. Slug is a required field when admin publishes a draft post, so here admin manually filled the slug field during publishing. Below is the screenshot from the post model in admin panel and view for Add Post.<br><details><summary>Empty slug screenshot</summary><img src="assets/empty-slug.jpg"></details><details><summary>Add Post View</summary><img src="assets/addPostView.jpg"></details> 
+
+----
+
+
+
+
+# Credits
+
+## Code
+- The basic set up of the website was done by strictly following the steps as described in Legion Script channel on Youtube
+- Followed the project Django he performed:https://www.youtube.com/watch?v=gy8ypTWT4wY
+
+## Learning Resources
+- Code Institutes Full Stack Framework Module, mainly the 'blog' walkthrough project.
+- Youtube videos by [Codemy](https://www.youtube.com/watch?v=gy8ypTWT4wY)
+- [W3CSchool](https://www.w3schools.com/django/)
+
+## Content and Media
+
+Mostly images and post content are taken from the website https://www.google.com/.
+
+----
+
+## Acknowledgement
+
+Special thanks to my mentor Richey Malhotra, My fellow student Cedric Littman in parts this project.
+
+[Back to top](<#content>)
+   
+
+
 
 
 
