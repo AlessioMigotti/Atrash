@@ -285,7 +285,9 @@ All the pages got a navbar and a footer.
 
 | **Unfix Bug** |
 | ----------- | 
-| When a logged in user adds a new post, the post slug should automatically be created from the post title. But the slug field is empty in the database. Slug is a required field when admin publishes a draft post, so here admin manually filled the slug field during publishing. Below is the screenshot from the post model in admin panel and view for Add Post.<br><details><summary>Empty slug screenshot</summary><img src="assets/empty-slug.jpg"></details><details><summary>Add Post View</summary><img src="assets/addPostView.jpg"></details> 
+| When ordering you can't pick more than one item, that could be considered a bug if you try to. But that's intentional, maybe i should've specified.
+There where some problems with the resposivness of the background image on the index, that i didn't solve for a lack of time. The image had some issues and needed some work outside the development enviroment.
+
 
 ----
 
@@ -296,12 +298,12 @@ All the pages got a navbar and a footer.
 
 ## Code
 - The basic set up of the website was done by strictly following the steps as described in Legion Script channel on Youtube
-- Followed the project Django he performed:https://www.youtube.com/watch?v=gy8ypTWT4wY
+- Followed the project Django he performed:https://www.youtube.com/watch?v=gy8ypTWT4wY .
 
 ## Learning Resources
 - Code Institutes Full Stack Framework Module, mainly the 'blog' walkthrough project.
-- Youtube videos by [Codemy](https://www.youtube.com/watch?v=gy8ypTWT4wY)
-- [W3CSchool](https://www.w3schools.com/django/)
+- Legion Script Django project.
+- [W3CSchool](https://www.w3schools.com/django/).
 
 ## Content and Media
 
@@ -311,7 +313,7 @@ Mostly images and post content are taken from the website https://www.google.com
 
 ## Acknowledgement
 
-Special thanks to my mentor Richey Malhotra, My fellow student Cedric Littman in parts this project.
+Special thanks to my mentor Richey Malhotra. I got to give credit to my fellow student Cedric Littman in a part this projects readme.
 
 [Back to top](<#content>)
    
